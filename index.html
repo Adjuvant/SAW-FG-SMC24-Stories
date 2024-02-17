@@ -1,1 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title of the document</title>
 
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- CSS files -->
+    <link rel="stylesheet" href="/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<!-- Page Content -->
+<header>
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+        <!--        Using id stubs that jquery completes for currently shown elements, sneaky! -->
+        <li><a href="#-cxt">Context</a></li>
+        <li class="divider"></li>
+        <li><a href="#-sa-u">Sound Annotator Utopia</a></li>
+        <li><a href="#-sa-d">Sound Annotator Dystopia</a></li>
+        <li><a href="#-sc-u">Sound Controller Utopia</a></li>
+        <li><a href="#-sc-d">Sound Controller Dystopia</a></li>
+    </ul>
+
+    <nav>
+        <div class="nav-wrapper deep-orange">
+            <a href="#!" class="brand-logo">Scenarios</a>
+            <ul class="right hide-on-med-and-down">
+                <li id="info-button" class="active waves-effect"><a>Info</a></li>
+                <li id="story1-button" class="waves-effect"><a>Open-plan Office</a></li>
+                <li id="story2-button" class="waves-effect"><a>Work From Home</a></li>
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Section<i
+                        class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+</header>
+
+<main>
+    <!-- Info -->
+    <section id="info" style="display: block;">
+        <div class="container.fluid">
+            <div class="row">
+                <div class="col s12">
+                    <div class="col s12 m2 l3; right-align">Section 1 Title</div>
+                    <div class="col s12 m8 l6">Content 1
+                        <p>This is a paragraph in info.</p>
+                        <p>This div is 12-columns on small screens, 6-columns on medium screens, and 3-columns on large
+                            screens.</p>
+                        <p>Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the
+                            tourists. Must go faster... go, go, go, go, go! This thing comes fully loaded. AM/FM radio,
+                            reclining bucket seats, and... power windows. My dad once told me, laugh and the world
+                            laughs with you, Cry, and I'll give you something to cry about you little bastard!</p>
+                        <p>God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates
+                            Dinosaurs. Just my luck, no ice. Eventually, you do plan to have dinosaurs on your dinosaur
+                            tour, right? Forget the fat lady! You're obsessed with the fat lady! Drive us out of
+                            here!</p>
+                    </div>
+                    <div class="col s12 m2 l3">Images 1</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Set 1 -->
+    <section id="story1" style="display: none;">
+        <h1 class="center">Gabrielle's Open-plan Office Scenarios</h1>
+        <div class="container.fluid">
+            <div class="row">
+                <div class="col s12">
+                    <div class="col s12 m2 l3; right-align">
+                        <p id="opo-cxt" class="flow-text">Situation and Noise Context</p>
+
+                    </div>
+                    <div class="col s12 m8 l6">
+                        <p class="flow-text">Our stories centre around Gabrielle, a mid-20s programmer at a software
+                            agency. At work, she organises work plans, creates code, and collaborates well with clients.
+                            Gabrielle work is busy, many deadlines across different projects. In this churn of tasks,
+                            office distractions are a challenge for her. But she strives to create a positive work
+                            environment for everyone. The main thing she wants is for the team to work together better,
+                            listen to each other's ideas, and support each other in finding solutions.</p>
+                        <p class="flow-text">The open-plan office is usually a bustling hub of activity and energy with
+                            people coming and going throughout the day. The hum of conversation and work fill the air.
+                            The scent of coffee wafts from the kitchen area. Desks sit in neat rows, and large windows
+                            allow natural light to flood the space. Monitors glow with the bright colours of
+                            screensavers and streams of emails.</p>
+                        <p class="flow-text">The hustle and bustle of a busy open-plan office isn't Gabrielle’s
+                            favourite thing. She's surrounded by the sounds of clacking keyboards, distant
+                            conversations, laughter, and sneezing. For her, loud conversations nearby and music can be
+                            distracting when she's trying to concentrate. Although it can be overwhelming at times, she
+                            has learned to tune out the noise and focus on her work.</p>
+                    </div>
+                    <div class="col s12 m2 l3">
+                        <audio controls>
+                            <source src="audio/opo-context.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <img class="responsive-img" src="/img/opo-cxt-2.png">
+                        <!--                        <img class="responsive-img" src="/img/opo-cxt-1.png">-->
+                        <img class="responsive-img" src="/img/opo-cxt-3.png">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="col s12 m2 l3; right-align">
+                        <p id="opo-sa-u" class="flow-text">Sound Annotation Utopia</p>
+                    </div>
+                    <div class="col s12 m8 l6">
+                        <p class="flow-text">This week HR decided to provide us all with a sound analyser device as part
+                            of a wellbeing initiative. HR says that once they have collected data from everyone, they
+                            can start looking at new policies for sound etiquette in the office. I was curious how this
+                            would work out.</p>
+                        <p class="flow-text">Today, I tested out the new sound tagging device. It was a handheld device
+                            that allowed us to label sounds. By pointing it at a sound and pressing a button, I could
+                            label it as either annoying or pleasant.</p>
+                        <p class="flow-text">I started off by tagging the sound of the coffee machine, which was a
+                            comforting sound for me, one that reminded me of the start of a new day. The hum of the air
+                            conditioner was also a pleasant sound, providing a constant background noise that seemed to
+                            keep me focused. As I made my way around the office, I heard a printer jamming. It was an
+                            irritating sound, so I quickly pointed the device at the printer and tagged it. But the
+                            sound of my co-worker typing on their keyboard was rhythmic and soothing. As I walked around
+                            further, I heard someone chewing and chomping. I tagged the sound as annoying and made a
+                            mental note to avoid sitting near them during lunch.</p>
+                        <p class="flow-text">Though it was uncomfortable at first, I started enjoying tagging things and
+                            became more aware of the sounds around me. It helped me appreciate sounds in a new way and
+                            feel more productive. I now feel more connected to my surroundings and appreciate the little
+                            things that make everyday life special.</p>
+                        <p class="flow-text">Once HR had all the data they wanted, we gave back the analyser devices,
+                            which was a shame as I was still enjoying my little sound walks. A week later, tech support
+                            installed monitoring microphones in the office, and we had a live visualisation of the
+                            office sound map. It showed us all the good and bad parts of the office for different
+                            activities. If you wanted to concentrate, the corner away from the meeting rooms was best.
+                            If you wanted to brainstorm, the spaces by the lounge would cause the least disturbance to
+                            others.</p>
+                        <p class="flow-text">At first, we were all self-conscious and tiptoed around the office, afraid
+                            to disturb the sound map. But as we got used to it and experimented, we found that kindness
+                            worked best. The system showed when we were polite, encouraging us to listen and respond
+                            with empathy. We had more meaningful conversations, sharing stories without judgment or
+                            interruption. As a result, the office became a place of connection and collaboration, where
+                            everyone felt seen and heard. Together, we solved problems, brainstormed new ideas, and
+                            created something beautiful.</p>
+                    </div>
+                    <div class="col s12 m2 l3">Images Utopia
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="col s12 m2 l3; right-align">
+                        <p id="opo-sa-d" class="flow-text">Sound Annotation Dystopia</p>
+                    </div>
+                    <div class="col s12 m8 l6">
+                        <p class="flow-text">Given recent reports of noise disturbance in the office, HR decided that
+                            something had to change, so they are trialling a new AI sound analyser service. They say
+                            that once it’s trained, they can make new noise etiquette rules about what we can do where,
+                            and when, in the office.</p>
+                        <p class="flow-text">So, HR assigned me a new task: testing a sound analyser device. It’s a box
+                            with a bunch of microphones and buttons on it to label sounds as either annoying or
+                            pleasant. After going through the obscure onboarding to position it in the room and
+                            calibrate its microphones, it was ready to go. The how-to says that you should use it when
+                            you notice a sound as either pleasant or annoying. But if you miss something the system is
+                            monitoring for novel sounds and will request an office user for a label.</p>
+                        <p class="flow-text">So now the box tells when it wants me to label something in the web app.
+                            Every so often I’m in the middle of coding and BING! the device lights up and I get a
+                            notification on my screen. The analyser has decided I need to listen to something and give
+                            it a label. I get it, it’s my task, but it is disrupting. Sometimes it takes ages to recover
+                            from such changes of context.</p>
+                        <p class="flow-text">Using it has surprised me in some ways. I've noticed how much I hate the
+                            sound of my co-worker eating. Although there are sounds I enjoy, I tend to forget to use it
+                            when I hear them. Instead, I only seem to reach for it when I'm annoyed by something. Also,
+                            I can't help but feel like something has changed. I'm no longer listening to the sounds of
+                            the office; I'm listening to something else. A judgement, a classification, a label.</p>
+                        <p class="flow-text">Once HR had all the data they wanted, we gave back the analyser devices. A
+                            week later, tech support installed monitoring microphones and LED fill lights throughout the
+                            office. The service uses these to create a live visualisation of the office sound map,
+                            showing all the areas with good and bad noise spots. Like a live colour map overlayed in the
+                            office.</p>
+                        <p class="flow-text">The sound analyser service did more than check noise. It also provided
+                            feedback on our tone and choice of words, acting like a judgmental co-worker critiquing
+                            every utterance. This made me second-guess every sentence, speaking more cautiously to avoid
+                            criticism from the analyser’s LED indicators. But even that was not enough, as it sometimes
+                            criticised me for being too quiet or too loud. It felt like trying to please a shifting,
+                            invisible audience.</p>
+                        <p class="flow-text">The sound analyser changed the office atmosphere and made us uncomfortable.
+                            We felt judged, making us on edge. Office dynamics changed from a comfortable space to a
+                            place of tension. I don't know if the Sound Analyzer service intended to do that, to change
+                            the way we communicated with each other. But that's what it did. And now, I still feel its
+                            presence, still feeling the judgmental microphone hovering over me, waiting for me to say
+                            the wrong thing.</p>
+                    </div>
+                    <div class="col s12 m2 l3">Images Dystopia</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="col s12 m2 l3; right-align">
+                        <p id="opo-sc-u" class="flow-text">Sound Controller Utopia</p>
+                    </div>
+                    <div class="col s12 m8 l6">
+                        <p class="flow-text">So, I heard about this new AI sound system from a colleague and decided to
+                            give it a shot. The AI listens and changes the soundscape based on your preferences. Pretty
+                            cool, huh?</p>
+                        <p class="flow-text">It's a subscription service where you rent their special equipment. So, an
+                            engineer came to install special speakers on my desk and set me up with the training
+                            software. The software put me through a pile of sound examples and asked me to tag them as
+                            pleasant or annoying to tune into my preferences. Once trained, I could choose from a range
+                            of ‘moods’ via an app, including focus mode, relaxing, and social.</p>
+                        <p class="flow-text">At first, I was a bit sceptical. Could an AI change how I perceive the
+                            world? Then something strange began to happen.</p>
+                        <p class="flow-text">The sound of waves lapping against the shore filled the reception area,
+                            creating a sense of calm. The AI sent live sound from real places, like beaches and
+                            rainforests, into public spaces. It was perfect for those who craved a little bit of nature
+                            in their workday. A cool feature was it having different settings for times of the day.
+                            During lunch breaks, the sounds of a bustling city street jostled. In the evening a gentle
+                            river and birdsong calmed those working late. This made you feel like there were little
+                            episodes to the day and you felt as is a story was unfolding.</p>
+                        <p class="flow-text">At my desk, the sounds of the office began to change. When someone began to
+                            eat, and my annoyance rose, a low fuzzy drone slowly began to fill the air, just right to
+                            block out the sound of the chewing. When someone tried to play music, the sound faded away
+                            to an inaudible whisper. The AI sound system subtly adjusted to my environment, responding
+                            to my mood, and created a sonic atmosphere that I was comfortable with. This made me feel a
+                            sense of control and focus that I didn't have before.</p>
+                        <p class="flow-text">After fiddling with the profile system some more, it turns out I could make
+                            new ‘moods’. So, I created a special soundscape for when I was brainstorming. It mixed the
+                            sounds of a forest from my childhood, the chatter of a coffee shop, and the distant buzz of
+                            a plane taking off. For some reason, this really worked when I was trying to come up with
+                            ideas. During a group brainstorming session, something unusual happened. I arrived early to
+                            the meeting room and logged into my profile to use the sound system and projector. But, once
+                            we started working, a co-worker started complaining that they couldn't focus and began
+                            questioning the strange soundscape. It’s cool, everyone is different, so we decided to turn
+                            it off and continue our work without it.</p>
+                        <p class="flow-text">Although the experience was initially disconcerting, I soon began to enjoy
+                            it. When I move from my desk, the AI sound system fades away, and the familiar sounds of the
+                            office surround me once again. But I'm happy in the knowledge that my little corner of the
+                            office could be just the way I like it.</p>
+                    </div>
+                    <div class="col s12 m2 l3">Images Utopia
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="col s12 m2 l3; right-align">
+                        <p id="opo-sc-d" class="flow-text">Sound Controller Dystopia</p>
+                    </div>
+                    <div class="col s12 m8 l6">
+                        <p class="flow-text">While I always found working in the office a little distracting, I had yet
+                            to realise how bad it could get.</p>
+                        <p class="flow-text">While working at my computer, I heard an odd sound in the air. Confused, I
+                            glanced around, but my colleagues were oblivious. I removed my headphones, but the sound
+                            wasn't coming from them. The sound stopped, and I went back to work. But then another sound
+                            disrupted me -- the sound of someone eating. It was coming from the other side of the
+                            office, yet the noise seemed so close. At lunch in the staff room, it seemed like I could
+                            hear rainforest birds chirping, so I stuck in my headphones. Then, as I walked through
+                            reception to leave for the day, I heard waves crashing against the shore. It was nice, but I
+                            also began to hear conversations in the background, as if they were coming from a real
+                            place.</p>
+                        <p class="flow-text">As time went on, I noticed other strange things. Music would play that I
+                            didn't like, and conversations would be louder than normal. It was as if something was
+                            playing a cruel joke on me, trying to make me feel uncomfortable in my own workplace. I went
+                            to HR to find out what was going on.</p>
+                        <p class="flow-text">The office got a new sound system that uses AI to change the sounds it
+                            makes depending on what each person likes. There was also a nature sound system installed in
+                            the public areas. HR sent a group email informing us, but I had missed it while on holiday.
+                            This might explain why there were so many weird sounds around me.</p>
+                        <p class="flow-text">To dig a bit deeper, I signed up for the AI service and reviewed the FAQ. I
+                            found that when the AI system lacks a user profile, it attempts to establish one through
+                            trial and error. This is what it had been doing with me. To know my preferences, it
+                            experimented on me. It noted my likes and dislikes through facial and behavioural
+                            recognition. So, I reset my profile, suffered through two hours of tagging noises in their
+                            web platform. Finally, I selected my preferences - nature sounds and no music for
+                            concentration. For a while, it worked well. The office music softened to whisper, and eating
+                            noises blurred into a low frequency mush. Monkeys and birds still battled in the staff room,
+                            which, amusing at first, soon became distracting.</p>
+                        <p class="flow-text">But I started to notice other strange things about the sound system. Music
+                            played that I didn't like, and colleague's Zoom chats boomed out. I tried to drown it out
+                            with my nature sounds, but it kept making these weird errors.</p>
+                        <p class="flow-text">A customer support chatbot explained that the sound system blended my
+                            preferences with those of my desk neighbour due to the special speaker placement.
+                            Uncomfortable and distracted with this fuzzy blend, I removed my consent and data from the
+                            platform. System tech support came in, altered the speaker arrangement. I took back
+                            control.</p>
+                        <p class="flow-text">Back in my normal chaos, I found relief. I stuck on my noise-cancelling
+                            headphones and focused on my work. I learned that the simplest solution can often be the
+                            best one.</p>
+                    </div>
+                    <div class="col s12 m2 l3">Images Dystopia</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story 2 -->
+    <section id="story2" style="display: none;">
+        <h1 class="center">Darius' Work From Home Scenarios</h1>
+        <div class="container.fluid">
+            <div class="row">
+                <div class="col s12">
+                    <div class="col s12 m2 l3; right-align">
+                        <p id="wfh-cxt" class="flow-text">Situation and Noise Context</p>
+                    </div>
+                    <div class="col s12 m8 l6">
+                        <p class="flow-text">Our stories centre on Darius, a mid-30s city planner and designer working
+                            at an architecture consultancy. He lives in a small but comfy two-story house in the Bow
+                            region of London with his partner and young daughter. Darius works from home but
+                            occasionally attends studio meetings and site visits around the country. He spends his time
+                            organising work plans, creating visualisations, and collaborating with clients.</p>
+                        <p class="flow-text">Each morning, Darius wakes up early to enjoy a cup of coffee before
+                            settling down at his desk. He looks out the window and takes in the sights and sounds of the
+                            city. When his daughter is ready for playgroup, Darius walks her there. During his workday,
+                            Darius takes walking breaks and occasionally works at a nearby café. He has a system and
+                            schedule that works for him and his family and is committed to finding the right balance
+                            between work and home life. Dedicating quality time with his daughter every day, Darius is
+                            confident he can maintain a comfortable and productive home office environment.</p>
+                        <p class="flow-text">Darius has set up a home office that enables him to focus and be
+                            productive. His office area is in the spare bedroom next to the living room, it is also a
+                            place for guests to stay and additional storage. The office is equipped with all the
+                            necessary tools and equipment, including a computer, drawing tablet, assorted office
+                            equipment, and document systems. The normal distractions are his daughter playing in the
+                            living room and the neighbour's dog barking. However, recently construction work has started
+                            on the neighbour's basement conversion, resulting in significant noise issues due to
+                            drilling, workmen, and other machine noise.</p>
+                    </div>
+                    <div class="col s12 m2 l3">
+                        <audio controls>
+                            <source src="audio/wfh-context.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <img class="responsive-img" src="/img/wfh-cxt-1.png">
+                        <img class="responsive-img" src="/img/wfh-cxt-2.png">
+                        <img class="responsive-img" src="/img/wfh-cxt-3.png">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="col s12 m2 l3; right-align">
+                        <p id="wfh-sa-u" class="flow-text">Sound Annotation Utopia</p>
+                    </div>
+                    <div class="col s12 m8 l6">
+                        <p class="flow-text">
+                            This week HR decided to provide us all with a sound analyser device as part of a wellbeing
+                            initiative. HR says that once they have collected data from everyone, they can start looking
+                            at new policies for sound etiquette for remote workers. I was curious how this would work
+                            out.
+                        </p>
+                        <p class="flow-text">
+                            Today, I tested out the new sound tagging device at home. It was a handheld device that
+                            allowed us to label sounds. By pointing it at a sound and pressing a button, I could label
+                            it as either annoying or pleasant.
+                        </p>
+                        <p class="flow-text">
+                            I started off by tagging the sound of birds chirping outside, which was a comforting sound
+                            for me, one that reminded me of the start of a new day. The sound of the rain was also a
+                            pleasant sound, providing a constant background noise that seemed to keep me focused. As I
+                            made my way around my home, I heard the dishwasher. Such an irritating sound, so I quickly
+                            pointed the device at it and tagged it. As I walked around further, I heard the regular
+                            mid-week morning sound of my neighbour mowing their lawn. I tagged the sound as annoying and
+                            made a mental note to avoid scheduling calls during that time.
+                        </p>
+                        <p class="flow-text">
+                            Though it was uncomfortable at first, I started enjoying tagging things and became more
+                            aware of the sounds around me. It helped me appreciate sounds in a new way and feel more
+                            productive. I now feel more connected to my surroundings and appreciate the little things
+                            that make everyday life special.
+                        </p>
+                        <p class="flow-text">
+                            Once HR had all the data they wanted, I gave back the analyser device, which was a shame as
+                            I was still enjoying my little sound walks. A week later, tech support installed monitoring
+                            microphones in my home, and it connected to a live sound map visualisation. It showed me all
+                            the good parts and times in my home for different activities. If you wanted to concentrate,
+                            the corner away from the street noise in the afternoon was best. If you wanted to take a
+                            break, the spaces by the kitchen would have the best relaxation sounds.
+                        </p>
+                        <p class="flow-text">
+                            At first, I was self-conscious and tiptoed around my home, afraid to disturb the sound map.
+                            But as I got used to it and experimented, I found that it analysed my communication too. The
+                            system showed when I was polite, encouraging me to listen and respond with empathy. I had
+                            more meaningful conversations, sharing stories without judgment or interruption. As a
+                            result, my home became a place of connection and productivity. I solved problems,
+                            brainstormed new ideas, and created something beautiful with my remote co-workers.
+                        </p>
+
+
+                    </div>
+                    <div class="col s12 m2 l3">Images Utopia
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="col s12 m2 l3; right-align">
+                        <p id="wfh-sa-d" class="flow-text">Sound Annotation Dystopia</p>
+                    </div>
+                    <div class="col s12 m8 l6">
+                        <p class="flow-text">
+                            Given recent reports of noise disturbance for home office workers, HR decided that something
+                            had to change, so they are trialling a new AI sound analyser service. They say that once
+                            it’s trained, they can make new noise etiquette rules about what we can do where, and when,
+                            while working from home.
+                        </p>
+                        <p class="flow-text">
+                            So, HR assigned me a new task: testing a sound analyser device. It’s a box with a bunch of
+                            microphones and buttons on it to label sounds as either annoying or pleasant. After going
+                            through the obscure onboarding to position it in the room and calibrate its microphones, it
+                            was ready to go. The how-to says that you should use it when you notice a sound as either
+                            pleasant or annoying. But if you miss something the system is monitoring for novel sounds
+                            and will request a me for a label.
+                        </p>
+                        <p class="flow-text">
+                            So now the box tells when it wants me to label something in the web app. Every so often I’m
+                            in the middle of something and BING! the device lights up and I get a notification on my
+                            screen. The analyser has decided I need to listen to something and give it a label. I get
+                            it, it’s my task, but it is disrupting. Sometimes it takes ages to recover from such changes
+                            of context.
+                        </p>
+                        <p class="flow-text">
+                            Using it has surprised me in some ways. I've noticed how much I hate the sound of kids TV
+                            songs. Although there are sounds I enjoy, I tend to forget to use it when I hear them.
+                            Instead, I only seem to reach for it when I'm annoyed by something. Also, I can't help but
+                            feel like something has changed. I'm no longer listening to the sounds of my home office;
+                            I'm listening to something else. A judgement, a classification, a label.
+                        </p>
+                        <p class="flow-text">
+                            Once HR had all the data they wanted, I returned the analyser device. A week later, tech
+                            support installed monitoring microphones and LED fill lights throughout my home office. The
+                            service uses these to create a live visualisation of the sound map, showing all the areas
+                            with good and bad noise spots. Like a live colour map overlayed in my home office.
+                        </p>
+                        <p class="flow-text">
+                            The sound analyser service did more than check noise. It also provided feedback on my tone
+                            and choice of words, acting like a judgmental colleague critiquing every utterance. This
+                            made me second-guess every sentence, speaking more cautiously to avoid criticism from the
+                            analyser’s LED indicators. But even that was not enough, as it sometimes criticised me for
+                            being too quiet or too loud. It felt like trying to please a shifting, invisible audience.
+                        </p>
+                        <p class="flow-text">
+                            The sound analyser changed the home office atmosphere and made me uncomfortable. I felt
+                            judged, making me on edge. Dynamics changed from a comfortable space to a place of tension.
+                            I don't know if the Sound Analyser service intended to do that, to change the way I
+                            communicated. But that's what it did. And now, I still feel its presence, that judgmental
+                            microphone hovering over me, waiting for me to say the wrong thing.
+                        </p>
+                    </div>
+                    <div class="col s12 m2 l3">Images Dystopia</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="col s12 m2 l3; right-align">
+                        <p id="wfh-sc-u" class="flow-text">Sound Controller Utopia</p>
+                    </div>
+                    <div class="col s12 m8 l6">
+                        <p class="flow-text">
+                            So, I heard about this new AI sound system from a colleague and decided to give it a shot
+                            while working from home. The AI listens and changes the soundscape based on your
+                            preferences. Pretty cool, huh?
+                        </p>
+                        <p class="flow-text">
+                            It's a subscription service where you rent their special equipment. So, tech support came to
+                            install special speakers in my home office and set me up with the training software. The
+                            software put me through a pile of sound examples and asked me to tag them as pleasant or
+                            annoying to tune into my preferences. Once trained, I could choose from a range of ‘moods’
+                            via an app, including focus mode, relaxing, and social.
+                        </p>
+                        <p class="flow-text">
+                            At first, I was a bit sceptical. Could an AI change how I perceive the world? Then something
+                            strange began to happen.
+                        </p>
+                        <p class="flow-text">
+                            The sound of waves lapping against the shore filled my home office, creating a sense of
+                            calm. The AI sent live sound from real places, like beaches and rainforests, into my
+                            workspace. It was perfect when I craved a little bit of nature but the weather outside was
+                            bad. A cool feature was it having different settings for times of the day. During lunch
+                            breaks, the sounds of a bustling city street jostled. In the evening a gentle river and
+                            birdsong calmed me when working late. This made you feel like there were little episodes to
+                            the day and you felt as if a story was unfolding.
+                        </p>
+                        <p class="flow-text">
+                            At my desk, the sounds of my home began to change. When my daughter began to watch TV, and
+                            my annoyance rose, a low fuzzy drone slowly began to fill the air, just right to block out
+                            the sound of the inane kids’ songs. When my neighbours played music in the garden, the sound
+                            faded away to an inaudible whisper. The AI sound system subtly adjusted to my environment,
+                            responding to my mood, and creating a sonic atmosphere that I was comfortable with. This
+                            made me feel a sense of control and focus that I didn't have before.
+                        </p>
+                        <p class="flow-text">
+                            After fiddling with the profile system some more, it turns out I could make new ‘moods’. So,
+                            I created a special soundscape for when I was brainstorming. It mixed the sounds of a forest
+                            from my childhood, the chatter of a coffee shop, and the distant buzz of a plane taking off.
+                            For some reason, this really worked when I was trying to come up with ideas. During a remote
+                            group brainstorming session, something unusual happened. I decided to stream my new sound
+                            mood via the conferencing system. But, once we started working, a co-worker started
+                            complaining that they couldn't focus and began questioning the strange soundscape. It’s
+                            cool, everyone is different, so we decided to turn it off and continue our work without it.
+                        </p>
+                        <p class="flow-text">
+                            Although the experience was initially disconcerting, I soon began to enjoy it. When I move
+                            from my desk, the AI sound system fades away, and the familiar sounds of my home surround me
+                            once again. But I'm happy in the knowledge that my little corner of the home office could be
+                            just the way I like it.
+                        </p>
+                    </div>
+                    <div class="col s12 m2 l3">Images Utopia
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="col s12 m2 l3; right-align">
+                        <p id="wfh-sc-d" class="flow-text">Sound Controller Dystopia</p>
+                    </div>
+                    <div class="col s12 m8 l6">
+                        <p class="flow-text">
+                            While I always found working from home to be distracting at times, I had yet to realise how
+                            bad it could be.
+                        </p>
+                        <p class="flow-text">
+                            While working at my computer, I heard an odd sound in the air. Confused, I glanced around,
+                            but my family members out. I checked if the radio was still on in the kitchen, but the sound
+                            wasn't coming from that. The sound stopped, and I went back to work. But then another sound
+                            disrupted me -- the sound of someone eating. It was coming from the kitchen, yet the noise
+                            seemed so close. During lunch, it seemed like I could hear birds chirping outside, so I
+                            stuck in my headphones. Then, as I came to the end my workday, I heard birdsong and rustling
+                            leaves. It was nice, but I also began to hear conversations in the background, as if the
+                            sounds were coming from a real place.
+                        </p>
+                        <p class="flow-text">
+                            As time went on, I noticed other strange things. Music would play from the living room that
+                            I didn't like, and conversations would be louder than normal. It was as if something was
+                            playing a cruel joke on me, trying to make me feel uncomfortable in my own home. I tried to
+                            focus on my work, but it was becoming increasingly difficult with all these distractions.
+                        </p>
+                        <p class="flow-text">
+                            Then I remembered, not long ago, HR sent round tech installers to fit a new sound system,
+                            but I ignored the other info in the email as I was preparing for a big presentation that
+                            day. The system was a bunch of networked smart speakers and cameras throughout my home. I
+                            thought it was just a neat perk, but it turns that it uses AI to change the soundscape
+                            depending on what I like. This might explain why there were so many weird sounds around me!
+                        </p>
+                        <p class="flow-text">
+                            To dig a bit deeper, I signed up for the AI service and reviewed the FAQ. I found that when
+                            the system lacks a user profile, it attempts to establish one through trial and error. This
+                            is what it had been doing with me. To know my preferences, it experimented on me. It noted
+                            my likes and dislikes through facial and behavioural recognition. So, I reset my profile,
+                            suffered through two hours of tagging noises in their web platform. Finally, I selected my
+                            preferences - nature sounds and no music for concentration. For a while, it worked well. The
+                            TV music blurred into a low frequency mush, and it blocked out the outside construction
+                            noises. But I started to notice other strange things about the system. Music played that I
+                            didn't like, and my family's kitchen chats boomed out in my office. I tried to drown it out
+                            with my nature sounds, but it kept making these weird errors.
+                        </p>
+                        <p class="flow-text">
+                            A customer support chatbot explained that the system blended my preferences with those of my
+                            family members due to the way the AI system was seeking to balance the sound profiles.
+                            Uncomfortable and distracted with this fuzzy blend, I decided to take back control. I
+                            requested HR remove the system from my house, and I reached for my noise-cancelling
+                            headphones when things got rowdy. It was a simple solution, but it worked. I learned that
+                            sometimes, the simplest solution can often be the best one.
+                        </p>
+                    </div>
+                    <div class="col s12 m2 l3">Images Dystopia</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="page-footer deep-orange">
+    <div class="sponsor-logos">
+        <img src="img/logo-ai4s.svg" alt="AI for Sound">
+        <img src="img/logo-cvssp.svg" alt="CVSSP">
+        <img src="img/logo-uos-black.png" alt="UoS">
+        <!-- Add more logos as needed -->
+    </div>
+    <p>Page created as supplement to paper for Sound and Music Computing 2024.</p>
+</footer>
+
+<!-- JavaScript files -->
+<!-- Include jQuery from Google's CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

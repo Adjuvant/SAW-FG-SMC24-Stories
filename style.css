@@ -1,0 +1,6 @@
+
+.sponsor-logos img {
+    height: 40px;   /* control the width */
+    width: auto;   /* maintain aspect ratio */
+    margin: 10px;
+}

@@ -1,13 +1,33 @@
-// A function to pause all audio elements and set their button states to 'pause'
-const pauseAllAudios = () => {
-    $.each($(".play"), function() {
-        let audioElem = $(this).siblings(".audio")[0];
-        let icon = $(this).children(".material-icons");
+// A function to get the audio element and the icon
+const getAudioAndIcon = (elem) => {
+    let audioElem = elem.siblings(".audio")[0];
+    let icon = elem.children(".material-icons");
+    return [audioElem, icon];
+};
 
-        if (!audioElem.paused) {
-            audioElem.pause();
-            icon.text("play_circle_outline");
-            $(this).removeClass('pulse');
+// A function to toggle the audio play
+const toggleAudioPlay = (audioElem, icon, button) => {
+    if (audioElem.paused) {
+        audioElem.play();
+        icon.text("pause_circle_outline");
+        button.addClass('pulse'); // Add pulse class
+    } else {
+        audioElem.pause();
+        icon.text("play_circle_outline");
+        button.removeClass('pulse'); // Remove pulse class
+    }
+};
+
+// A function to pause all audio elements, except the one specified as an exception, and set their button states to 'pause'
+const pauseAllAudios = (exception) => {
+    $.each($(".play"), function() {
+        if (this !== exception) {
+            let [audioElem, icon] = getAudioAndIcon($(this));
+            if (!audioElem.paused) {
+                audioElem.pause();
+                icon.text("play_circle_outline");
+                $(this).removeClass('pulse');
+            }
         }
     });
 };
@@ -15,30 +35,16 @@ const pauseAllAudios = () => {
 // get all play buttons and add icon switcher listener
 $.each($(".play"), function() {
     $(this).on("click", function() {
-
-        pauseAllAudios(); // pause all other audios
-
-        let audioElem = $(this).siblings(".audio")[0];
-        let icon = $(this).children(".material-icons");
-
-        if (audioElem.paused) {
-            audioElem.play();
-            icon.text("pause_circle_outline");
-            $(this).addClass('pulse'); // Add pulse class
-        } else {
-            audioElem.pause();
-            icon.text("play_circle_outline");
-            $(this).removeClass('pulse'); // Remove pulse class
-        }
+        pauseAllAudios(this); // pause all other audios except the one being clicked
+        let [audioElem, icon] = getAudioAndIcon($(this));
+        toggleAudioPlay(audioElem, icon, $(this));
     });
 });
 
 // get all mute buttons and add icon switcher listener, currently not in use
 $.each($(".mute"), function() {
     $(this).on("click", function() {
-        let audioElem = $(this).siblings(".audio")[0];
-        let icon = $(this).children(".material-icons");
-
+        let [audioElem, icon] = getAudioAndIcon($(this));
         if (audioElem.muted) {
             audioElem.muted = false;
             icon.text("volume_off");

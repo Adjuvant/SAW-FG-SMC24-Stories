@@ -1,6 +1,34 @@
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+    /* Add below CSS properties to animate */
+    animation-name: opacity-change;
+    animation-duration: 60s; /* control speed here */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes opacity-change {
+    from {
+        opacity: 0.05;
+    }
+    to {
+        opacity: 0.25;
+    }
+}
 
 .sponsor-logos img {
-    height: 40px;   /* control the width */
-    width: auto;   /* maintain aspect ratio */
+    height: 40px;
+    width: auto;
     margin: 10px;
 }
